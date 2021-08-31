@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Hind+Vadodara&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: F9DDD2;
+
+}
+
+.titleCard {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-family: "Damion", sans-serif;
+    font-size: 10vw;
+    color: black;
+}
+
+.wrapper h2 {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 3.5vw;
+    color: black;
+}
