@@ -19,6 +19,7 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    --pink-primary: #df4986;
 }
 
 * {
@@ -27,16 +28,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #1C1C1B;
+}
+
 body::-webkit-scrollbar {
     width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #df4986;
+    background: var(--pink-primary);
     border-radius: 2rem;
 }
 
@@ -54,6 +59,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 80px;
 }
 
 img {
@@ -63,12 +69,35 @@ img {
 }
 
 .pink {
-    color: #df49a6;
+    color: var(--pink-primary);
     font-weight: 800;
+}
+
+.pinkh1 {
+    color: var(--pink-primary);
 }
 
 main {
     margin-left: 5rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
 }
 
 /* End of Global */
@@ -153,7 +182,7 @@ main {
 }
 
 #navbar .fa-secondary {
-    color: #df49a6;
+    color: var(--pink-primary);
 }
 
 #navbar .fa-primary,
@@ -165,15 +194,32 @@ main {
 
 /* Hero Section */
 
-#hero { 
+
+#hero .hero { 
     background: url(/Images/Boston.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
+    height: 100vh;
+    align-items: center;
+    justify-content: left;
+    padding-left: 13rem;
 }
 
-#hero::after {
+#hero .hero::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(transparent 80%, #1C1C1B 100%);
+    opacity: 1;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#hero .hero::after {
     content: '';
     position: absolute;
     background-color: black;
@@ -183,12 +229,6 @@ main {
     width: 100%;
     left: 0;
     top: 0;
-}
-
-#hero .hero {
-    align-items: center;
-    justify-content: left;
-    padding-left: 13rem;
 }
 
 #hero .hero .Hello,
@@ -208,7 +248,7 @@ main {
 }
 
 #hero .hero .titleName {
-    -webkit-text-stroke: 2px #df49a6;
+    -webkit-text-stroke: 2px var(--pink-primary);
 }
 
 #hero .hero .Hello::before,
@@ -232,7 +272,7 @@ main {
 }
 
 #hero .hero .titleName::before {
-    color: #df49a6;
+    color: var(--pink-primary);
     animation: animate3 3s linear forwards;
 }
 
@@ -263,7 +303,8 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 10rem;
-    background-color: #df4986;
+    overflow: hidden;
+    background-color: var(--pink-primary);
     z-index: -2;
 }
 
@@ -283,9 +324,100 @@ main {
 #hero .hero .button .cta:hover:before {
     color: #270c17;
     width: 100%;
+    overflow: hidden;
 }
 
 /* End of Hero Section */
+
+
+/* Start of Services Section */
+
+#services .services {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#services .services-header .section-title {
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .service-item-header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 2rem auto;
+}
+
+#services .service-item-header p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin: 2rem 1rem;
+}
+
+#services .service-item-bg {
+    background-color: #0E0E0E;
+    height: 45vh;
+    width: 20rem;
+    margin: 1rem auto;
+    border-radius: 25px;
+}
+
+#services .service-item-bg .service-item-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#services .service-item {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#services .service-item .program-name {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+#services #digitalart {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+
+#services #digitalart .service-item-header h1 {
+    padding: 2rem;
+}
+
+/* End of Services Section */
+
+
+
+
+
+
+
+
+
 
 
 
