@@ -89,6 +89,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
+    margin-top: 4rem;
 }
 
 p {
@@ -98,6 +99,7 @@ p {
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.02rem;
+    text-align: center;
 }
 
 .icon {
@@ -342,6 +344,8 @@ p {
     height: 100%;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -351,6 +355,10 @@ p {
     letter-spacing: .1rem;
     justify-content: center;
     align-items: center;
+}
+
+#services .service-item-header {
+    text-align: center;
 }
 
 #services .service-item-header h1 {
@@ -366,7 +374,9 @@ p {
 #services .service-item-header p {
     font-size: 1rem;
     line-height: 1.3rem;
-    margin: 2rem 1rem;
+    max-width: 400px;
+    text-align: center;
+    position: static;
 }
 
 #services .service-item-bg {
@@ -375,6 +385,7 @@ p {
     width: 20rem;
     margin: 1rem auto;
     border-radius: 25px;
+    border: 5px solid var(--pink-primary);
 }
 
 #services .service-item-bg .service-item-container {
@@ -401,55 +412,79 @@ p {
     text-align: center;
 }
 
-#services #digitalart {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 0;
+#services #digitalArt {
+    padding: 0;
+    margin: 2rem auto auto auto;
 }
 
-#services #digitalart .service-item-header h1 {
-    padding: 2rem;
+#services #illustration {
+    padding: 0rem;
+    margin: auto auto 2rem auto;
+
 }
+
 
 /* End of Services Section */
 
 
 /* Projects Section */
 
-#projects .projects{
-    display: flex;
-    flex-direction: column;
+#projects .projects {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-}
-
-#projects .project-item {
-    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin: 2rem auto;
 }
 
-#projects #easy-bank {
+#projects .projects .section-title {
+    padding-top: 3rem;
+}
+
+#projects .projects .project-item-header {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 2rem auto;
+    padding-top: 2rem;
+}
+
+#projects .projects .project-item-container {
+    min-height: 25rem;
+    width: 85vw;
+    height: 22rem;
+    max-width: 22rem;
+    margin: 1rem auto;
+    border-radius: 25px;
+    border: 5px solid var(--pink-primary);
+}
+
+#projects .projects #banking {
     background: url(/Images/EasyBank.png);
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#projects .projects #restaraunts {
+    background: url(/Images/PepesPizza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#projects .projects #eCommerce {
+    background: url(/Images/jewelry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* End of Projects Section */
-
-
-
-
-
-
-
-
-
 
 
 
