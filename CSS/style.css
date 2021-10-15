@@ -59,7 +59,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0;
 }
 
 img {
@@ -382,7 +381,7 @@ p {
 #services .service-item-bg {
     background-color: #0E0E0E;
     height: 45vh;
-    width: 20rem;
+    width: 22rem;
     margin: 1rem auto;
     border-radius: 25px;
     border: 5px solid var(--pink-primary);
@@ -413,16 +412,13 @@ p {
 }
 
 #services #digitalArt {
-    padding: 0;
     margin: 2rem auto auto auto;
 }
 
 #services #illustration {
-    padding: 0rem;
     margin: auto auto 2rem auto;
 
 }
-
 
 /* End of Services Section */
 
@@ -440,6 +436,7 @@ p {
 
 #projects .projects .section-title {
     padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 #projects .projects .project-item-header {
@@ -461,6 +458,8 @@ p {
     margin: 1rem auto;
     border-radius: 25px;
     border: 5px solid var(--pink-primary);
+    position: relative;
+    overflow: hidden;
 }
 
 #projects .projects #banking {
@@ -484,8 +483,76 @@ p {
     background-position: center;
 }
 
+#projects .projects #gaming {
+    background: url(/Images/gaming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* End of Projects Section */
 
+
+/* About Me Section */
+
+#about .about {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about .section-title {
+    padding: 0 0 4rem 0;
+}
+
+#about .about .col-left p {
+    font-size: 1rem;
+    max-width: 30rem;
+    line-height: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#about .about .col-right .about-img {
+    width: 300px;
+    margin-bottom: 5.5rem;
+    position: relative;
+}
+
+#about .about .col-right .about-img::after {
+    content: '';
+    position: absolute;
+    background: var(--pink-primary);
+    right: -11px;
+    top: -10px;
+    height: 20%;
+    width: 30%;
+    z-index: -1;
+}
+
+#about .about .col-right .about-img::before {
+    content: '';
+    position: absolute;
+    background: var(--pink-primary);
+    left: -10px;
+    bottom: -7px;
+    height: 20%;
+    width: 30%;
+    z-index: -1;
+}
+
+/* End of About Me Section */
+
+
+/* Contact Section */
+
+#contact .contact {
+    flex-direction: column;
+}
+
+/* End of Contact Section */
 
 
 /* Media Query */
