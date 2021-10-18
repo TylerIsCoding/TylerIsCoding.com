@@ -350,6 +350,7 @@ p {
     flex-direction: column;
 }
 
+
 #services .services-header .section-title {
     font-size: 3.5rem;
     letter-spacing: .1rem;
@@ -518,8 +519,13 @@ p {
 
 #about .about .col-right .about-img {
     width: 300px;
+    height: auto;
     margin-bottom: 5.5rem;
     position: relative;
+}
+
+#about .about .col-right .about-img img {
+    border: 10px solid #1C1C1B;
 }
 
 #about .about .col-right .about-img::after {
@@ -667,27 +673,15 @@ p {
 
 /* Media Query */
 
-    /* Very Small Screens */
-
 @media only screen and (max-width: 390px) {
-
-    /* Global */
 
     main {
         margin: 0;
     }
 
-    /* End of Global */
-
-    /* Navbar */
-
     #navbar .nav-link svg {
         margin: 0;
     }
-
-    /* End of Navbar */
-
-    /* Hero */
 
     #hero .hero .Hello,
     #hero .hero .Im, 
@@ -704,27 +698,14 @@ p {
         font-size: 1rem;
         padding: 1rem 1.5rem;
     }
-
-    /* End of Hero */
-
 }
-    /* End of Very Small Screens */
-
-
-    /* Small Screens */
 
 @media only screen and (max-width: 660px) {
-
-    /* Global */
 
     main {
         margin-left: 0;
         margin-bottom: 5rem;
     }
-
-    /* End of Global */
-
-    /* Navbar */
 
     #navbar .navbar {
         bottom: 0;
@@ -745,10 +726,6 @@ p {
         justify-content: center;
     }
 
-    /* End of Navbar */
-
-    /* Hero */
-
     #hero .hero {
         justify-content: center;
         padding: 0;
@@ -757,17 +734,10 @@ p {
     #hero .hero h1 {
         font-size: 5rem;
     }
-
-    /* End of Hero */
-
 }
 
 
-    /* Large Screens */
-
 @media only screen and (min-width: 661px) {
-
-    /* Navbar */
 
     #navbar .navbar {
         top: 0;
@@ -789,16 +759,38 @@ p {
         margin-top: auto;
         padding-bottom: 25px;
     }
+}
 
-    /* End of Navbar */
+@media only screen and (min-width: 1600px) {
 
-    /* Services */
+    #services .services {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
 
-    
+    #services .section-title {
+        padding-top: 5rem;
+    }
 
-    /* End of Services */
+    #services .services .service-container {
+        min-height: 700px;
+        align-items: center;
+        position: relative;
+    }
 
+    #services .service-item-bg {
+        min-height: 360px;
+        overflow: hidden;
+    }
 
+    #services .services .service-item-header {
+        margin-top: 5rem;
+    }
+
+    #projects .projects {
+        flex-direction: row;
+    }
 }
 
 /* End of Media Query */
