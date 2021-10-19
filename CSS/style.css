@@ -64,7 +64,6 @@ a {
 img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
 }
 
 .pink {
@@ -88,7 +87,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 p {
@@ -350,14 +349,6 @@ p {
     flex-direction: column;
 }
 
-
-#services .services-header .section-title {
-    font-size: 3.5rem;
-    letter-spacing: .1rem;
-    justify-content: center;
-    align-items: center;
-}
-
 #services .service-item-header {
     text-align: center;
 }
@@ -383,6 +374,8 @@ p {
 #services .service-item-bg {
     background-color: #0E0E0E;
     height: 45vh;
+    max-height: 420px;
+    min-height: 400px;
     width: 22rem;
     margin: 1rem auto;
     border-radius: 25px;
@@ -414,7 +407,7 @@ p {
 }
 
 #services #digitalArt {
-    margin: 5rem auto auto auto;
+    margin: 2rem auto auto auto;
 }
 
 #services #illustration {
@@ -436,9 +429,18 @@ p {
     flex-direction: column;
 }
 
-#projects .projects .section-title {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+#projects .section-title {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+#projects p {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1rem;
+    max-width: 25rem;
+    line-height: 1.5rem;
 }
 
 #projects .projects .project-item-header {
@@ -457,7 +459,7 @@ p {
     width: 85vw;
     height: 22rem;
     max-width: 22rem;
-    margin: 1rem auto;
+    margin: 0 auto;
     border-radius: 25px;
     border: 5px solid var(--pink-primary);
     position: relative;
@@ -504,17 +506,21 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
+    min-height: 0;
 }
 
-#about .about .section-title {
-    padding: 0 0 4rem 0;
+#about .section-title {
+    padding: 2rem 0 4rem;
 }
 
 #about .about .col-left p {
     font-size: 1rem;
     max-width: 30rem;
     line-height: 1.5rem;
-    margin-bottom: 4rem;
+}
+
+#about .about .col-left .button {
+    margin: 2rem auto;
 }
 
 #about .about .col-right .about-img {
@@ -522,6 +528,7 @@ p {
     height: auto;
     margin-bottom: 5.5rem;
     position: relative;
+    display: block;
 }
 
 #about .about .col-right .about-img img {
@@ -564,9 +571,9 @@ p {
 }
 
 #contact .contact .contact-header .section-title {
-    margin: 10px auto;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 #contact .contact .contact-item {
@@ -676,7 +683,8 @@ p {
 @media only screen and (max-width: 390px) {
 
     main {
-        margin: 0;
+        margin-bottom: 5rem;
+        width: 100%;
     }
 
     #navbar .nav-link svg {
@@ -697,6 +705,18 @@ p {
     #hero .hero .button .cta {
         font-size: 1rem;
         padding: 1rem 1.5rem;
+    }
+
+    #services .section-title {
+        padding: 2rem 0 2rem 0;
+    }
+
+    #services .service-item-header h1{
+        margin-top: 2rem;
+    }
+
+    #services .service-item-header p {
+        padding: 0 1rem;
     }
 }
 
@@ -790,6 +810,39 @@ p {
 
     #projects .projects {
         flex-direction: row;
+        min-height: 0;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+    #projects p {
+        max-width: 40rem;
+    }
+
+    #about .section-title {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    #about .about {
+        min-height: 0;
+        flex-direction: row;
+        margin: 2rem auto 5rem auto;
+    }
+
+    #about .col-left {
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about .col-right .about-img {
+        width: 400px;
+        height: auto;
+        margin-bottom: 5.5rem;
+        position: relative;
+        display: block;
     }
 }
 
