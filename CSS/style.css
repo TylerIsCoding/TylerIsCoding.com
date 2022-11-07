@@ -8,7 +8,6 @@
 
 /* End of Fonts */
 
-
 /* Global */
 
 :root {
@@ -17,7 +16,7 @@
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --bg-secondary: rgb(20, 20, 24);
     --transition-speed: 600ms;
     --pink-primary: #df4986;
 }
@@ -29,7 +28,7 @@
 }
 
 body {
-    background: #1C1C1B;
+    background: #1c1c1b;
 }
 
 body::-webkit-scrollbar {
@@ -88,6 +87,7 @@ main {
     letter-spacing: 0.2rem;
     text-align: center;
     padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 p {
@@ -120,7 +120,7 @@ p {
     border-radius: 10rem;
     position: relative;
     overflow: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
     z-index: 1;
 }
 
@@ -146,7 +146,7 @@ p {
     height: 100%;
     overflow: hidden;
     background-color: white;
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
 }
@@ -159,6 +159,19 @@ p {
 
 /* End of Global */
 
+/* Section Styles */
+
+.section-style-1 {
+    background-color: #1c1c1b;
+    padding-bottom: 2rem;
+}
+
+.section-style-2 {
+    background-color: #111111;
+    padding-bottom: 2rem;
+}
+
+/* End of Section Styles */
 
 /* Navbar Section */
 
@@ -226,13 +239,11 @@ p {
     white-space: nowrap;
 }
 
-
 #navbar .nav-link svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
 }
-
 
 #navbar .fa-primary {
     color: #ff7eee;
@@ -251,23 +262,23 @@ p {
 
 /* Hero Section */
 
-
-#hero .hero { 
-    background: url(/Images/Boston.jpg);
+#hero .hero {
+    background: url(/images/Boston.jpg);
     background-size: cover;
     background-position: top center;
+    background-attachment: fixed;
     position: relative;
     z-index: 1;
     height: 100vh;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
     padding-left: 13rem;
 }
 
 #hero .hero::before {
     content: '';
     position: absolute;
-    background: linear-gradient(transparent 80%, #1C1C1B 100%);
+    background: linear-gradient(transparent 80%, #1c1c1b 100%);
     opacity: 1;
     z-index: 1;
     height: 100%;
@@ -280,7 +291,7 @@ p {
     content: '';
     position: absolute;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.9;
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -289,13 +300,13 @@ p {
 }
 
 #hero .hero .Hello,
-#hero .hero .Im, 
+#hero .hero .Im,
 #hero .hero .titleName {
     font-family: 'Roboto', sans-serif;
     font-size: 6rem;
     font-weight: 600;
     color: transparent;
-    -webkit-text-stroke: 2px white; 
+    -webkit-text-stroke: 2px white;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -333,169 +344,178 @@ p {
     animation: animate3 3s linear forwards;
 }
 
+#hero .hero-right {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+}
+
+#hero .hero-right h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+}
+
+#hero .hero-right p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 /* End of Hero Section */
 
+/* Start of Statement Section */
+
+#statement .statement {
+    color: var(--text-secondary);
+    width: 60em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+#statement .statement.container {
+    min-height: 70vh;
+}
+
+#statement .statement header h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+#statement .statement hr {
+    width: 30%;
+}
+
+#statement .statement p {
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
 
 /* Start of Services Section */
 
 #services .services {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    padding: 3rem;
 }
 
-#services .service-item-header {
-    text-align: center;
-}
-
-#services .service-item-header h1 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 2.2rem;
-    font-weight: 400;
-    letter-spacing: .15rem;
-    text-transform: uppercase;
-    color: white;
-    margin: 5rem auto 3rem auto;
-}
-
-#services .service-item-header p {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    max-width: 400px;
-    text-align: center;
-    position: static;
-}
-
-#services .service-item-bg {
-    background-color: #0E0E0E;
-    height: 45vh;
-    max-height: 420px;
-    min-height: 400px;
-    width: 22rem;
-    margin: 1rem auto;
-    border-radius: 25px;
-    border: 5px solid var(--pink-primary);
-}
-
-#services .service-item-bg .service-item-container {
+#services .services .services-left {
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-#services .service-item {
-    margin: 0 auto;
-    padding: .3rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#services .services .services-left .icons {
+    height: 100%;
     width: 100%;
-}
-
-#services .service-item .program-name {
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    font-size: 2.2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
 }
 
-#services #digitalArt {
-    margin: 2rem auto auto auto;
+#services .services .services-left .icons li {
+    padding: 30px;
+    margin: 40px;
+    border: 3px solid var(--pink-primary);
+    transform: rotate(45deg);
 }
 
-#services #illustration {
-    margin: auto auto 3rem auto;
+#services .services .services-left .icons li img {
+    max-width: 100px;
+    transform: rotate(-45deg);
+}
 
+#services .services .services-right {
+    width: 60%;
+    height: 100%;
+    gap: 3rem;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#services .services .services-right header {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#services .services .services-right h4 {
+    color: var(--text-secondary);
+    font-size: 2rem;
+}
+
+#services .services .services-right p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 /* End of Services Section */
-
 
 /* Projects Section */
 
 #projects .projects {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     text-align: center;
     display: flex;
-    flex-direction: column;
-}
-
-#projects .section-title {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #projects p {
-    display: flex;
     margin: 0 auto;
     width: 100%;
-    font-size: 1rem;
-    max-width: 25rem;
+    font-size: 1.8rem;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 #projects .projects .project-item-header {
     font-family: 'Fredoka One', cursive;
     font-size: 2.2rem;
     font-weight: 400;
-    letter-spacing: .15rem;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
     color: white;
     margin: 2rem auto;
     padding-top: 2rem;
 }
 
-#projects .projects .project-item-container {
-    min-height: 25rem;
-    width: 85vw;
-    height: 22rem;
-    max-width: 22rem;
-    margin: 0 auto;
-    border-radius: 25px;
+#projects .project-item {
+    width: 100%;
+}
+
+#projects .project-item img {
+    border-radius: 10px;
+    max-width: 400px;
     border: 5px solid var(--pink-primary);
-    position: relative;
-    overflow: hidden;
 }
 
-#projects .projects #banking {
-    background: url(/Images/EasyBank.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#projects .projects #restaraunts {
-    background: url(/Images/PepesPizza.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#projects .projects #eCommerce {
-    background: url(/Images/jewelry.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#projects .projects #gaming {
-    background: url(/Images/gaming.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#projects .project-item p {
+    font-size: 1.2rem;
+    width: 80%;
+    padding: 2rem;
 }
 
 /* End of Projects Section */
-
 
 /* About Me Section */
 
@@ -509,14 +529,33 @@ p {
     min-height: 0;
 }
 
-#about .section-title {
-    padding: 2rem 0 4rem;
+#about .about .col-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+    text-align: left;
+}
+
+#about .about .col-left header {
+    width: 100%;
+}
+
+#about .about .col-left hr {
+    width: 80%;
+    text-align: left;
+}
+
+#about .about .col-left header h2 {
+    color: var(--text-secondary);
+    font-size: 2rem;
 }
 
 #about .about .col-left p {
     font-size: 1rem;
     max-width: 30rem;
     line-height: 1.5rem;
+    text-align: left;
 }
 
 #about .about .col-left .button {
@@ -529,10 +568,12 @@ p {
     margin-bottom: 5.5rem;
     position: relative;
     display: block;
+    z-index: 1;
 }
 
 #about .about .col-right .about-img img {
-    border: 10px solid #1C1C1B;
+    border: 10px solid #111111;
+    z-index: 5;
 }
 
 #about .about .col-right .about-img::after {
@@ -558,7 +599,6 @@ p {
 }
 
 /* End of About Me Section */
-
 
 /* Contact Section */
 
@@ -589,7 +629,7 @@ p {
 }
 
 #contact .contact .contact-item .contact-text {
-    padding: .5rem 2rem .5rem 0;
+    padding: 0.5rem 2rem 0.5rem 0;
     margin: 0 auto;
     width: 100%;
     justify-content: center;
@@ -614,7 +654,6 @@ p {
 
 /* End of Contact Section */
 
-
 /* Footer Section */
 
 #footer {
@@ -635,14 +674,14 @@ p {
     text-transform: uppercase;
     color: white;
     font-size: 2rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
 }
 
 #footer h2 {
     color: white;
     font-weight: 500;
     font-size: 1rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -662,11 +701,11 @@ p {
     height: 50px;
     margin: 0 10px;
     filter: grayscale(1);
-    transition: .3s ease filter;
+    transition: 0.3s ease filter;
 }
 
 #footer .social-item:hover img {
-    filter:grayscale(0);
+    filter: grayscale(0);
 }
 
 #footer p {
@@ -677,11 +716,9 @@ p {
 
 /* End of Footer Section */
 
-
 /* Media Query */
 
 @media only screen and (max-width: 390px) {
-
     main {
         margin-bottom: 5rem;
         width: 100%;
@@ -692,7 +729,7 @@ p {
     }
 
     #hero .hero .Hello,
-    #hero .hero .Im, 
+    #hero .hero .Im,
     #hero .hero .titleName {
         font-size: 3rem;
         -webkit-text-stroke: 1px white;
@@ -707,11 +744,7 @@ p {
         padding: 1rem 1.5rem;
     }
 
-    #services .section-title {
-        padding: 2rem 0 2rem 0;
-    }
-
-    #services .service-item-header h1{
+    #services .service-item-header h1 {
         margin-top: 2rem;
     }
 
@@ -721,7 +754,6 @@ p {
 }
 
 @media only screen and (max-width: 660px) {
-
     main {
         margin-left: 0;
         margin-bottom: 5rem;
@@ -756,9 +788,7 @@ p {
     }
 }
 
-
 @media only screen and (min-width: 661px) {
-
     #navbar .navbar {
         top: 0;
         width: 5rem;
@@ -782,7 +812,6 @@ p {
 }
 
 @media only screen and (min-width: 1600px) {
-
     #services .services {
         align-items: flex-start;
         justify-content: space-evenly;
@@ -808,18 +837,6 @@ p {
         margin-top: 5rem;
     }
 
-    #projects .projects {
-        flex-direction: row;
-        min-height: 0;
-        justify-content: space-evenly;
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-    }
-
-    #projects p {
-        max-width: 40rem;
-    }
-
     #about .section-title {
         padding-bottom: 4rem;
         padding-top: 4rem;
@@ -828,7 +845,6 @@ p {
     #about .about {
         min-height: 0;
         flex-direction: row;
-        margin: 2rem auto 5rem auto;
     }
 
     #about .col-left {
