@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Your description goes here" />
+        <meta name="keywords" content="one, two, three" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Paterro's Kitchen</title>
+        <!-- external CSS link -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Yeseva+One&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav>
+                <ul>
+                    <li class="logo"><a href="#hero">Paterro's Kitchen</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#hours">Hours</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li class="cart">
+                        <img src="images/cart.png" alt="Cart Icon" />
+                    </li>
+                    <li class="search">
+                        <img src="images/search.png" alt="Search Icon" />
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" id="hero">
+            <section class="hero-flex">
+                <h1>
+                    Welcome to<br />
+                    Paterro's<br />Kitchen
+                </h1>
+                <section class="searchbar">
+                    <form action="#">
+                        <input type="text" placeholder="Search here" />
+                    </form>
+                    <select name="location" id="location">
+                        <option value="default">Location</option>
+                        <option value="boston">Boston</option>
+                        <option value="newYork">New York</option>
+                        <option value="chicago">Chicago</option>
+                    </select>
+                </section>
+                <section class="socials">
+                    <span
+                        ><img
+                            src="images/facebook.png"
+                            alt="Facebook"
+                        />252k</span
+                    >
+                    <span
+                        ><img src="images/twitter.png" alt="Twitter" />62k</span
+                    >
+                    <span
+                        ><img
+                            src="images/instagram.png"
+                            alt="Instagram"
+                        />55k</span
+                    >
+                </section>
+            </section>
+        </section>
+        <section class="story" id="about">
+            <section class="story-content">
+                <h4 class="section-h4">About us</h4>
+                <h2 class="section-h2">Discover Our<br />Restaurant Story</h2>
+                <p>
+                    Paterro's was founded by world star chef Anthony Paterro in
+                    2012 with his wife Angelica. Since 2012, they have expanded
+                    their restaurant into two more locations. One in Chicago and
+                    one in New York City. This Italian-Mediterranean fusion
+                    restaurant was the talk of Boston and has since been
+                    featured in the Improper Bostonian, Phantom Gourmet, and
+                    many other publications.
+                </p>
+                <br />
+                <p>
+                    If you're in the mood for some serious flavor and healthy,
+                    delicious, Italian-Mediterranean cuisine; please make a
+                    reservation below as we do book fast. Thanks for visiting.
+                </p>
+                <a href="#menu"
+                    ><span class="discover-menu">Discover Menu</span
+                    ><!--
+                --><span class="arrow-right"
+                        ><img src="images/arrow.png" alt="arrow" /></span
+                ></a>
+            </section>
+        </section>
+        <section class="specialties" id="menu">
+            <section class="specialty-top">
+                <h4 class="section-h4">Order Online Now</h4>
+                <h2 class="section-h2">Our Specialty Cuisine</h2>
+                <ul>
+                    <li class="meal-tab">
+                        <a href="#">Breakfast</a>
+                    </li>
+                    <li class="meal-tab">
+                        <a href="#">Lunch</a>
+                    </li>
+                    <li class="meal-tab">
+                        <a href="#">Dinner</a>
+                    </li>
+                    <li class="meal-tab">
+                        <a href="#">Dessert</a>
+                    </li>
+                    <li class="meal-tab">
+                        <a href="#">Shakes</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="specialty-items">
+                <img src="images/food1.jpg" alt="Food 1" />
+                <img src="images/food2.jpg" alt="Food 2" />
+                <img src="images/food3.jpg" alt="Food 3" />
+                <img src="images/food4.jpg" alt="Food 4" />
+            </section>
+        </section>
+        <section class="hours" id="hours">
+            <h4 class="section-h4">Book Table</h4>
+            <h2 class="section-h2">Opening Hours</h2>
+            <img src="images/phone.png" alt="Phone Icon" />
+            <span>Call Now</span>
+            <span>(617) 555 - 2331</span>
+            <section class="hour-blocks">
+                <section class="days">
+                    <span>Monday to Tuesday</span>
+                    <span>9:00 am - 9:00 pm</span>
+                </section>
+                <section class="days">
+                    <span>Wednesday to Sunday</span>
+                    <span>11:00 am - 10:00 pm</span>
+                </section>
+            </section>
+            <section class="video">
+                <video
+                    id="cookingVideo"
+                    src="images/pizza.mp4"
+                    poster="images/video.jpg"
+                    preload="none"
+                    controls
+                ></video>
+            </section>
+        </section>
+        <section class="reviews" id="reviews">
+            <h4 class="section-h4">Testimonials</h4>
+            <h2 class="section-h2">Customers Say</h2>
+            <section class="customer">
+                <img src="images/customer.png" alt="Customer Image" />
+                <h3>John Smith</h3>
+                <span>Art Director</span>
+                <section class="stars">
+                    <img src="images/star.png" alt="Star" />
+                    <img src="images/star.png" alt="Star" />
+                    <img src="images/star.png" alt="Star" />
+                    <img src="images/star.png" alt="Star" />
+                    <img src="images/star.png" alt="Star" />
+                </section>
+            </section>
+            <p>
+                What can I say about Paterro's that hasn't already been said?
+                This place is amazing. From the decor, the lively dining
+                environment, and absolutely delectable cuisine, this place has
+                quickly become one of my favorite spots. I have taken friends,
+                dates, and business associates to Paterro's and they have all
+                been amazed. Thank you Chef Paterro for blessing us with such a
+                wonderful dining experience.
+            </p>
+        </section>
+        <footer>
+            <ul id="copyright">
+                <li>&copy; 2022 Tyler McKenna. All rights reserved.</li>
+                <li>
+                    Design based on
+                    <a href="https://dribbble.com/mithunray">Mithun Ray's</a>
+                </li>
+                <li>
+                    Stock footage provided by
+                    <a
+                        class="link author-link-popup"
+                        target="_blank"
+                        href="https://www.videvo.net/profile/videvo"
+                        >Videvo</a
+                    >, downloaded from
+                    <a
+                        class="videvo-redirect"
+                        target="_blank"
+                        href="https://www.videvo.net"
+                        >videvo.net</a
+                    >
+                </li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
