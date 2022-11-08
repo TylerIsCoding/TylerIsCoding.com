@@ -6,13 +6,16 @@
 /* Fedroka One | Regular */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+/* Baloo 2 | Regular Bold */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
 /* End of Fonts */
 
 /* Global */
 
 :root {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo 2', cursive;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -356,16 +359,37 @@ hr {
     padding: 20px;
 }
 
-#hero .hero-right h2 {
-    font-family: 'Roboto', sans-serif;
+#hero .hero-right .titleText {
+    font-family: 'Baloo 2', cursive;
     font-size: 3.5rem;
     font-weight: 300;
     color: var(--text-secondary);
+    -webkit-animation: 5s ease 0s normal forwards 1 fadein;
+    animation: 5s ease 0s normal forwards 1 fadein;
 }
 
-#hero .hero-right p {
-    font-size: 1.5rem;
-    font-weight: 300;
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* End of Hero Section */
@@ -469,7 +493,7 @@ hr {
 
 #services .services .services-right p {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
 }
 
@@ -483,6 +507,7 @@ hr {
     text-align: center;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -564,7 +589,7 @@ hr {
 }
 
 #about .about .col-left p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 30rem;
     line-height: 1.5rem;
     text-align: left;
@@ -629,7 +654,6 @@ hr {
 }
 
 #contact .contact .contact-item {
-    font-family: 'Roboto', sans-serif;
     color: white;
     display: flex;
     width: 100%;
