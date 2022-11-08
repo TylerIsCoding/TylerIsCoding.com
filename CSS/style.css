@@ -157,6 +157,12 @@ p {
     overflow: hidden;
 }
 
+hr {
+    background-color: var(--pink-primary);
+    height: 2px;
+    border: none;
+}
+
 /* End of Global */
 
 /* Section Styles */
@@ -263,7 +269,7 @@ p {
 /* Hero Section */
 
 #hero .hero {
-    background: url(/images/Boston.jpg);
+    background: url(/images/Boston4.jpg);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -291,7 +297,7 @@ p {
     content: '';
     position: absolute;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -478,6 +484,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #projects p {
@@ -500,13 +507,18 @@ p {
 }
 
 #projects .project-item {
-    width: 100%;
+    width: 33%;
 }
 
-#projects .project-item img {
+#projects .project-img {
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 300px;
     border: 5px solid var(--pink-primary);
+    transition: all 0.2s;
+}
+
+#projects .project-img:hover {
+    transform: scale(103%);
 }
 
 #projects .project-item p {
