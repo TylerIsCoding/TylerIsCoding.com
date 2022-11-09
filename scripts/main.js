@@ -7,13 +7,13 @@ paterrosImage.addEventListener('click', redirectRestaurant);
 salonImage.addEventListener('click', redirectSalon);
 
 function redirectSneakers() {
-    window.location.href = '../shoe-store/index.html';
+    window.open('../shoe-store/index.html', '_blank');
 }
 
 function redirectRestaurant() {
-    window.location.href = '../restaurant/index.html';
+    window.open('../restaurant/index.html', '_blank');
 }
 
 function redirectSalon() {
-    window.location.href = '../salon/index.html';
+    window.open('../salon/index.html', '_blank');
 }

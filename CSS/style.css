@@ -275,7 +275,7 @@ hr {
     background: url(/images/Boston4.jpg);
     background-size: cover;
     background-position: top center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -355,41 +355,17 @@ hr {
 
 #hero .hero-right {
     text-align: center;
-    width: 50%;
+    width: 100%;
     padding: 20px;
 }
 
 #hero .hero-right .titleText {
     font-family: 'Baloo 2', cursive;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--text-secondary);
     -webkit-animation: 5s ease 0s normal forwards 1 fadein;
     animation: 5s ease 0s normal forwards 1 fadein;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    66% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    66% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 /* End of Hero Section */
@@ -398,13 +374,15 @@ hr {
 
 #statement .statement {
     color: var(--text-secondary);
-    width: 60em;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: left;
+    padding: 2rem;
+    gap: 20px;
 }
 
 #statement .statement.container {
@@ -414,7 +392,7 @@ hr {
 #statement .statement header h2 {
     font-size: 3rem;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
 }
 
 #statement .statement hr {
@@ -433,18 +411,18 @@ hr {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem;
 }
 
 #services .services .services-left {
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 #services .services .services-left .icons {
@@ -470,9 +448,8 @@ hr {
 }
 
 #services .services .services-right {
-    width: 60%;
+    width: 100%;
     height: 100%;
-    margin-right: 20rem;
     gap: 3rem;
     text-align: left;
     display: flex;
@@ -484,6 +461,7 @@ hr {
     color: white;
     font-size: 2rem;
     font-weight: 300;
+    text-align: center;
 }
 
 #services .services .services-right h4 {
@@ -506,7 +484,7 @@ hr {
     height: 100%;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -532,7 +510,7 @@ hr {
 }
 
 #projects .project-item {
-    width: 33%;
+    width: 100%;
 }
 
 #projects .project-img {
@@ -571,7 +549,8 @@ hr {
     flex-direction: column;
     height: 100%;
     gap: 2rem;
-    text-align: left;
+    text-align: center;
+    padding: 2rem;
 }
 
 #about .about .col-left header {
@@ -579,8 +558,8 @@ hr {
 }
 
 #about .about .col-left hr {
-    width: 80%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 
 #about .about .col-left header h2 {
@@ -794,6 +773,9 @@ hr {
         margin-left: 0;
         margin-bottom: 5rem;
     }
+    #hero .hero.container {
+        flex-direction: column;
+    }
 
     #navbar .navbar {
         bottom: 0;
@@ -825,6 +807,18 @@ hr {
 }
 
 @media only screen and (min-width: 661px) {
+    #hero .hero.container {
+        flex-direction: column;
+    }
+
+    #hero .hero-right {
+        width: 100%;
+    }
+
+    #hero .hero-right .titleText {
+        font-size: 2.5rem;
+    }
+
     #navbar .navbar {
         top: 0;
         width: 5rem;
@@ -844,6 +838,26 @@ hr {
     #navbar .nav-item:last-child {
         margin-top: auto;
         padding-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #hero .hero.container {
+        flex-direction: row;
+    }
+
+    #hero .hero-right {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #hero .hero-right .titleText {
+        font-size: 3rem;
+    }
+
+    #statement .statement hr {
+        width: 70%;
     }
 }
 
@@ -897,7 +911,6 @@ hr {
         display: block;
     }
 }
-
 /* End of Media Query */
 
 /* Keyframes */
@@ -965,6 +978,30 @@ hr {
     100% {
         width: 105%;
         border-right: transparent;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
