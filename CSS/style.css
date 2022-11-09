@@ -526,8 +526,8 @@ hr {
 
 #projects .project-item p {
     font-size: 1.2rem;
-    width: 80%;
     padding: 2rem;
+    max-width: 500px;
 }
 
 /* End of Projects Section */
@@ -849,6 +849,21 @@ hr {
     #hero .hero-right {
         width: 50%;
     }
+
+    #services .services {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    #services .services .services-left {
+        display: unset;
+        padding: 4rem;
+    }
+
+    #services .services .services-right {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -862,12 +877,6 @@ hr {
 }
 
 @media only screen and (min-width: 1600px) {
-    #services .services {
-        align-items: flex-start;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-
     #services .section-title {
         padding-top: 5rem;
     }
@@ -885,6 +894,14 @@ hr {
 
     #services .services .service-item-header {
         margin-top: 5rem;
+    }
+
+    #projects .projects {
+        flex-direction: row;
+    }
+
+    #projects .projects .project-item {
+        width: 33%;
     }
 
     #about .section-title {
