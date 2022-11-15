@@ -759,6 +759,10 @@ hr {
         padding: 1rem 1.5rem;
     }
 
+    #hero .hero-right .titleText {
+        font-size: 1.5rem;
+    }
+
     #services .service-item-header h1 {
         margin-top: 2rem;
     }
@@ -809,6 +813,7 @@ hr {
 @media only screen and (min-width: 661px) {
     #hero .hero.container {
         flex-direction: column;
+        padding-left: 0;
     }
 
     #hero .hero-right {
@@ -842,6 +847,9 @@ hr {
 }
 
 @media only screen and (min-width: 1024px) {
+    #hero .hero {
+        background-attachment: fixed;
+    }
     #hero .hero.container {
         flex-direction: row;
     }
@@ -867,8 +875,15 @@ hr {
 }
 
 @media only screen and (min-width: 1200px) {
+    #hero .hero.container {
+        padding-left: 13rem;
+    }
     #hero .hero-right .titleText {
         font-size: 3rem;
+    }
+
+    #statement .statement {
+        width: 70%;
     }
 
     #statement .statement hr {
