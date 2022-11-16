@@ -160,6 +160,56 @@ p {
     overflow: hidden;
 }
 
+.submitButton {
+    font-family: 'Fredoka One', cursive;
+    color: #270c17;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    border-radius: 10rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 1;
+    border: none;
+    margin: 2em;
+}
+
+.submitButton:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+    border: none;
+}
+
+.submitButton:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    border: none;
+    overflow: hidden;
+    background-color: var(--pink-primary);
+    z-index: -2;
+}
+
+.submitButton:hover:before {
+    color: #270c17;
+    width: 100%;
+    overflow: hidden;
+}
+
 hr {
     background-color: var(--pink-primary);
     height: 2px;
@@ -620,10 +670,6 @@ hr {
 
 #contact .contact {
     flex-direction: column;
-}
-
-#contact .contact .contact-header {
-    margin: 4rem auto;
 }
 
 #contact .contact .contact-header .section-title {
