@@ -475,45 +475,56 @@
                             Contact <span class="pink">Me</span>
                         </h1>
                     </div>
-                    <div class="contact-item">
-                        <h1 class="contact-text">My name is</h1>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Your name here"
-                            required
-                        />
-                    </div>
-                    <div class="contact-item">
-                        <h1 class="contact-text">I would like to ask about</h1>
-                        <input
-                            type="text"
-                            name="inquiry"
-                            placeholder="designing my business a website!"
-                            required
-                        />
-                    </div>
-                    <div class="contact-item">
-                        <h1 class="contact-text">My phone number is</h1>
-                        <input
-                            type="text"
-                            name="number"
-                            placeholder="(XXX) XXX-XXXX"
-                            required
-                        />
-                    </div>
-                    <div class="contact-item">
-                        <h1 class="contact-text">Oh, and my email is</h1>
-                        <input
-                            type="text"
-                            name="email"
-                            placeholder="your-email@website.com"
-                            required
-                        />
-                    </div>
-                    <div class="button">
-                        <a href="#submit" type="button" class="cta">Submit</a>
-                    </div>
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        onSubmit="submit"
+                    >
+                        <div class="contact-item">
+                            <h1 class="contact-text">My name is</h1>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your name here"
+                                required
+                            />
+                        </div>
+                        <div class="contact-item">
+                            <h1 class="contact-text">
+                                I would like to ask about
+                            </h1>
+                            <input
+                                type="text"
+                                name="inquiry"
+                                placeholder="designing my business a website!"
+                                required
+                            />
+                        </div>
+                        <div class="contact-item">
+                            <h1 class="contact-text">My phone number is</h1>
+                            <input
+                                type="tel"
+                                name="number"
+                                placeholder="(XXX) XXX-XXXX"
+                                required
+                            />
+                        </div>
+                        <div class="contact-item">
+                            <h1 class="contact-text">Oh, and my email is</h1>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="your-email@website.com"
+                                required
+                            />
+                        </div>
+                        <div class="button" type="submit">
+                            <a href="#submit" type="button" class="cta"
+                                >Submit</a
+                            >
+                        </div>
+                    </form>
                 </div>
             </section>
             <!-- End of Contact Section -->
