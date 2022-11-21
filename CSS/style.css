@@ -221,6 +221,7 @@ p {
 
 .more-text {
     font-size: 1rem !important;
+    cursor: pointer;
 }
 
 hr {
