@@ -1,13 +1,13 @@
 /* Fonts */
 
 /* Roboto | Regular Medium Bold */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /* Fedroka One | Regular */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
 /* Baloo 2 | Regular Bold */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
 
 /* End of Fonts */
 
@@ -15,7 +15,7 @@
 
 :root {
     font-size: 16px;
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -84,7 +84,7 @@ main {
 .section-title {
     font-size: 4rem;
     font-weight: 300;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -115,7 +115,7 @@ p {
 }
 
 .button .cta {
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     color: #270c17;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ p {
 }
 
 .button .cta:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -141,7 +141,7 @@ p {
 }
 
 .button .cta:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -161,7 +161,7 @@ p {
 }
 
 .submitButton {
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     color: #270c17;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -176,7 +176,7 @@ p {
 }
 
 .submitButton:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -191,7 +191,7 @@ p {
 }
 
 .submitButton:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -349,7 +349,7 @@ hr {
 }
 
 #hero .hero::before {
-    content: '';
+    content: "";
     position: absolute;
     background: linear-gradient(transparent 80%, #111111 100%);
     opacity: 1;
@@ -361,7 +361,7 @@ hr {
 }
 
 #hero .hero::after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: black;
     opacity: 0.8;
@@ -375,7 +375,7 @@ hr {
 #hero .hero .Hello,
 #hero .hero .Im,
 #hero .hero .titleName {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 6rem;
     font-weight: 600;
     color: transparent;
@@ -424,7 +424,7 @@ hr {
 }
 
 #hero .hero-right .titleText {
-    font-family: 'Baloo 2', cursive;
+    font-family: "Baloo 2", cursive;
     font-size: 2rem;
     font-weight: 300;
     color: var(--text-secondary);
@@ -457,6 +457,7 @@ hr {
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
+    line-height: 3rem;
 }
 
 #statement .statement hr {
@@ -466,7 +467,7 @@ hr {
 #statement .statement p {
     text-align: left;
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 /* Start of Services Section */
@@ -569,7 +570,7 @@ hr {
 }
 
 #projects .projects .project-item-header {
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 0.15rem;
@@ -664,7 +665,7 @@ hr {
 }
 
 #about .about .col-right .about-img::after {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--pink-primary);
     right: -11px;
@@ -675,7 +676,7 @@ hr {
 }
 
 #about .about .col-right .about-img::before {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--pink-primary);
     left: -10px;
@@ -760,7 +761,7 @@ hr {
 }
 
 #footer .brand {
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: white;
     font-size: 2rem;
@@ -987,7 +988,7 @@ hr {
 
 @media only screen and (min-width: 1600px) {
     #statement .statement {
-        width: 60%;
+        width: 40%;
     }
 
     #statement .statement hr {
