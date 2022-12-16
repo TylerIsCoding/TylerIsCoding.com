@@ -1046,7 +1046,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 2160px) {
+@media only screen and (min-width: 3360px) {
     #hero .hero .Hello, #hero .hero .Im, #hero .hero .titleName {
         font-size: 12rem;
     }
@@ -1094,6 +1094,7 @@ hr {
     }
     #statement .statement header h2 {
         font-size: 6rem;
+        line-height: 5rem;
     }
     #statement .statement p {
         font-size: 2.8rem;
