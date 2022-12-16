@@ -1045,6 +1045,85 @@ hr {
         display: block;
     }
 }
+
+@media only screen and (min-width: 2160px) {
+    #hero .hero .Hello, #hero .hero .Im, #hero .hero .titleName {
+        font-size: 12rem;
+    }
+    #hero .hero-right .titleText {
+        font-size: 5rem;
+    }
+    .button .cta {
+        font-size: 3rem;
+        padding: 25px 50px;
+    }
+    .section-title {
+        font-size: 8rem;
+    }
+    #about .about .col-left header h2 {
+        font-size: 4rem;
+    }
+    #about .about .col-left p {
+        font-size: 3rem;
+        max-width: 70rem;
+        line-height: 4rem;
+        text-align: left;
+        padding: 0 18px;
+    }
+    #about .about .col-right .about-img {
+        width: 650px;
+    }
+    .more-text {
+        font-size: 3rem !important;
+    }
+    #projects p {
+        font-size: 4rem;
+    }
+    #projects .projects .project-item-header {
+        font-size: 3.2rem;
+        margin: 6rem auto;
+        padding-top: 7rem;
+    }
+    #projects .project-img {
+        max-width: 600px;
+    }
+    #projects .project-item p {
+        font-size: 2.4rem;
+        max-width: 815px;
+        line-height: 2.5rem;
+    }
+    #statement .statement header h2 {
+        font-size: 6rem;
+    }
+    #statement .statement p {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+    #services .services .services-right header {
+        font-size: 4rem;
+    }
+    #services .services .services-right p {
+        font-size: 2.6rem;
+        line-height: 3.5rem;
+    }
+    #services .services .services-right h4 {
+        font-size: 4rem;
+    }
+    #contact .contact .contact-item {
+        max-width: 800px;
+    }
+    #contact .contact .contact-item input {
+        width: 700px;
+        height: 6rem;
+        font-size: 1.8rem;
+    }
+    #contact .contact .contact-item .contact-text {
+        font-size: 3rem;
+    }
+    .submitButton {
+        font-size: 3rem;
+    }
+}
 /* End of Media Query */
 
 /* Keyframes */
