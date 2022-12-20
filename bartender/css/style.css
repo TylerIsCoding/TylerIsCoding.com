@@ -188,6 +188,9 @@ header a {
   .searchButton {
     margin-top: 10px;
   }
+  .drinkImage {
+    height: 285px;
+  }
 }
 
 @media screen and (max-width: 500px) {
