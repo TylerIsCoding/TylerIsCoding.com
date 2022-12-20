@@ -163,6 +163,47 @@ header a {
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
+
+@media screen and (max-width: 1000px) {
+  #main {
+    max-width: unset;
+    margin: 100px 20px;
+    padding: 5px;
+  }
+  .searchField,
+  .searchButton {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+  }
+  .resultList li {
+    width: 100%;
+  }
+  .drinkImage {
+    height: 350px;
+  }
+  .drinkInst {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main {
+    max-width: unset;
+    margin: 100px 20px;
+    padding: 5px;
+  }
+  #main .contents h2 {
+    font-size: 1.3rem;
+  }
+  .searchField,
+  .searchButton {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .contents {
     padding: 0;
@@ -190,45 +231,5 @@ header a {
   }
   .drinkImage {
     height: 285px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #main {
-    max-width: unset;
-    margin: 100px 20px;
-    padding: 5px;
-  }
-  #main .contents h2 {
-    font-size: 1.3rem;
-  }
-  .searchField,
-  .searchButton {
-    padding: 10px;
-    font-size: 1.2rem;
-    border: 2px solid black;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #main {
-    max-width: unset;
-    margin: 100px 20px;
-    padding: 5px;
-  }
-  .searchField,
-  .searchButton {
-    padding: 10px;
-    font-size: 1.2rem;
-    border: 2px solid black;
-  }
-  .resultList li {
-    width: 100%;
-  }
-  .drinkImage {
-    height: 350px;
-  }
-  .drinkInst {
-    width: unset;
   }
 }
