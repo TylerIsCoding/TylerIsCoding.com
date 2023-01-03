@@ -1,635 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tyler is Coding</title>
-        <link rel="stylesheet" href="../CSS/style.css" />
-        <link rel="icon" href="./images/tab-icon.png" />
-        <meta property="og:title" content='Tyler is Coding'/>
-        <meta property="og:type" content="website">
-        <meta property="og:description" content='Portfolio site for Tyler McKenna'/>
-        <meta property="og:url" content='https://www.tyleriscoding.com'/>
-        <meta name="image" property="og:image" content="https://www.tyleriscoding.com/images/site-preview-image.png">
-        <meta name="author" content="Tyler McKenna">
-    </head>
-    <body>
-        <!-- Beginning of Header Section -->
-        <section id="navbar">
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li class="logo">
-                        <a href="#" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fad"
-                                data-icon="angle-double-right"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"
-                                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-                            >
-                                <g class="fa-group">
-                                    <path
-                                        fill="currentColor"
-                                        d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                                        class="fa-secondary"
-                                    ></path>
-                                    <path
-                                        fill="currentColor"
-                                        d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                                        class="fa-primary"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <span class="link-text"
-                                ><span class="pink">T</span>yler
-                                <span class="pink">I</span>s
-                                <span class="pink">C</span>oding</span
-                            >
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="house-chimney"
-                                class="svg-inline--fa fa-house-chimney"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M511.8 287.6L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L416 100.7V64C416 46.33 430.3 32 448 32H480C497.7 32 512 46.33 512 64V185L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6L511.8 287.6z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="address-card"
-                                class="svg-inline--fa fa-address-card"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">About Me</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="briefcase"
-                                class="svg-inline--fa fa-briefcase"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">Projects</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="handshake-angle"
-                                class="svg-inline--fa fa-handshake-angle"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M488 191.1h-152l.0001 51.86c.0001 37.66-27.08 72-64.55 75.77c-43.09 4.333-79.45-29.42-79.45-71.63V126.4l-24.51 14.73C123.2 167.8 96.04 215.7 96.04 267.5L16.04 313.8c-15.25 8.751-20.63 28.38-11.75 43.63l80 138.6c8.875 15.25 28.5 20.5 43.75 11.75l103.4-59.75h136.6c35.25 0 64-28.75 64-64c26.51 0 48-21.49 48-48V288h8c13.25 0 24-10.75 24-24l.0001-48C512 202.7 501.3 191.1 488 191.1zM635.7 154.5l-79.95-138.6c-8.875-15.25-28.5-20.5-43.75-11.75l-103.4 59.75h-62.57c-37.85 0-74.93 10.61-107.1 30.63C229.7 100.4 224 110.6 224 121.6l-.0004 126.4c0 22.13 17.88 40 40 40c22.13 0 40-17.88 40-40V159.1h184c30.93 0 56 25.07 56 56v28.5l80-46.25C639.3 189.4 644.5 169.8 635.7 154.5z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="address-book"
-                                class="svg-inline--fa fa-address-book"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M384 0H96C60.65 0 32 28.65 32 64v384c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64V64C448 28.65 419.3 0 384 0zM240 128c35.35 0 64 28.65 64 64s-28.65 64-64 64c-35.34 0-64-28.65-64-64S204.7 128 240 128zM336 384h-192C135.2 384 128 376.8 128 368C128 323.8 163.8 288 208 288h64c44.18 0 80 35.82 80 80C352 376.8 344.8 384 336 384zM496 64H480v96h16C504.8 160 512 152.8 512 144v-64C512 71.16 504.8 64 496 64zM496 192H480v96h16C504.8 288 512 280.8 512 272v-64C512 199.2 504.8 192 496 192zM496 320H480v96h16c8.836 0 16-7.164 16-16v-64C512 327.2 504.8 320 496 320z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">Contact</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#footer" class="nav-link">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                data-prefix="fas"
-                                data-icon="users"
-                                class="svg-inline--fa fa-users"
-                                role="img"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 512"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"
-                                    class="fa-primary"
-                                ></path>
-                            </svg>
-                            <span class="link-text">Social Media</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler is Coding</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" href="./images/tab-icon.png" />
+    <meta property="og:title" content="Tyler is Coding" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Portfolio site for Tyler McKenna"
+    />
+    <meta property="og:url" content="https://www.tyleriscoding.com" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://www.tyleriscoding.com/images/site-preview-image.png"
+    />
+    <meta name="author" content="Tyler McKenna" />
+  </head>
+  <body>
+    <!-- Beginning of Header Section -->
+    <section id="navbar">
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="#" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="angle-double-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+              >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                    class="fa-secondary"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                    class="fa-primary"
+                  ></path>
+                </g>
+              </svg>
+              <span class="link-text"
+                ><span class="pink">T</span>yler <span class="pink">I</span>s
+                <span class="pink">C</span>oding</span
+              >
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="house-chimney"
+                class="svg-inline--fa fa-house-chimney"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M511.8 287.6L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L416 100.7V64C416 46.33 430.3 32 448 32H480C497.7 32 512 46.33 512 64V185L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6L511.8 287.6z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="address-card"
+                class="svg-inline--fa fa-address-card"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="briefcase"
+                class="svg-inline--fa fa-briefcase"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="handshake-angle"
+                class="svg-inline--fa fa-handshake-angle"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M488 191.1h-152l.0001 51.86c.0001 37.66-27.08 72-64.55 75.77c-43.09 4.333-79.45-29.42-79.45-71.63V126.4l-24.51 14.73C123.2 167.8 96.04 215.7 96.04 267.5L16.04 313.8c-15.25 8.751-20.63 28.38-11.75 43.63l80 138.6c8.875 15.25 28.5 20.5 43.75 11.75l103.4-59.75h136.6c35.25 0 64-28.75 64-64c26.51 0 48-21.49 48-48V288h8c13.25 0 24-10.75 24-24l.0001-48C512 202.7 501.3 191.1 488 191.1zM635.7 154.5l-79.95-138.6c-8.875-15.25-28.5-20.5-43.75-11.75l-103.4 59.75h-62.57c-37.85 0-74.93 10.61-107.1 30.63C229.7 100.4 224 110.6 224 121.6l-.0004 126.4c0 22.13 17.88 40 40 40c22.13 0 40-17.88 40-40V159.1h184c30.93 0 56 25.07 56 56v28.5l80-46.25C639.3 189.4 644.5 169.8 635.7 154.5z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="address-book"
+                class="svg-inline--fa fa-address-book"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M384 0H96C60.65 0 32 28.65 32 64v384c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64V64C448 28.65 419.3 0 384 0zM240 128c35.35 0 64 28.65 64 64s-28.65 64-64 64c-35.34 0-64-28.65-64-64S204.7 128 240 128zM336 384h-192C135.2 384 128 376.8 128 368C128 323.8 163.8 288 208 288h64c44.18 0 80 35.82 80 80C352 376.8 344.8 384 336 384zM496 64H480v96h16C504.8 160 512 152.8 512 144v-64C512 71.16 504.8 64 496 64zM496 192H480v96h16C504.8 288 512 280.8 512 272v-64C512 199.2 504.8 192 496 192zM496 320H480v96h16c8.836 0 16-7.164 16-16v-64C512 327.2 504.8 320 496 320z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">Contact</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="users"
+                class="svg-inline--fa fa-users"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"
+                  class="fa-primary"
+                ></path>
+              </svg>
+              <span class="link-text">Social Media</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of Header Section -->
+
+    <!-- MAIN -->
+    <main>
+      <!-- Beginning of Hero Section -->
+      <section id="hero">
+        <div class="hero container">
+          <div class="hero-left">
+            <div>
+              <h1 class="Hello" data-text="Hello,">Hello,</h1>
+              <h1 class="Im" data-text="I'm ">
+                I'm
+                <span class="titleName" data-text="Tyler">Tyler</span>
+              </h1>
+              <div class="button">
+                <a href="#about" type="button" class="cta">I need a dev</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <h2 class="titleText">
+              I am a designer and a full-stack web developer.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- End of Hero Section -->
+
+      <!-- Start of About Me Section -->
+      <section id="about" class="section-style-2">
+        <h1 class="section-title">About <span class="pink">Me</span></h1>
+        <div class="about container">
+          <div class="col-left">
+            <header>
+              <h2>I'm here to help</h2>
+            </header>
+            <hr />
+            <p>
+              I am a software engineer based in Boston, Massachusetts and I am
+              passionate about helping clients and businesses increase their web
+              presence by building responsive and beautiful websites.
+            </p>
+            <div class="content">
+              <p>
+                I went to The New England Institute of Art and received my
+                degree in Digital Art and Animation. During my schooling I
+                learned many software suites including the Adobe Creative Suite,
+                3Ds Max, Maya, and more. A chunk of my courses were in web
+                design, web development, and programming to make rudimentary
+                websites. This was the first spark of a life-long passion for
+                web development.
+              </p>
+              <p>
+                When I am not writing code you can typically find me making
+                playlists, reading books, gaming, playing guitar, creating art,
+                or endlessly scrolling Instagram. Most recently, I have gotten
+                really into collecting sneakers. My wallet does not appreciate
+                it.
+              </p>
+            </div>
+            <div class="button more">
+              <h3 class="cta more-text">More</h3>
+            </div>
+          </div>
+          <div class="col-right">
+            <div class="about-img">
+              <img src="/images/profile-img.jpg" alt="Image of Tyler" />
+            </div>
+          </div>
+        </div>
+        <div class="about-buttons">
+          <div class="button">
+            <a
+              href="./files/Tyler_McKenna_Resume.pdf"
+              target="_blank"
+              type="button"
+              class="cta"
+              ><img
+                class="button-image"
+                src="./Images/icon-download.png"
+                alt="Download Icon"
+              />Resume</a
+            >
+          </div>
+          <div class="button">
+            <a href="#contact" type="button" class="cta">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Me Section -->
+
+      <!-- Beginning of Projects Section -->
+      <section id="projects" class="section-style-1">
+        <h1 class="section-title">Pro<span class="pink">j</span>ects</h1>
+        <p>Here are a few of the projects I've made recently:</p>
+        <section class="projects container">
+          <div class="project-item">
+            <h1 class="project-item-header">
+              Silverpoin<span class="pinkh1">t</span> Sneakers
+            </h1>
+            <img
+              id="silverpoint-img"
+              class="project-img"
+              src="/images/pic01.png"
+              alt="Silverpoint"
+            />
+            <p>
+              A fully responsive website for a local sneaker, clothing, and
+              watch retailer named Silverpoint Sneakers.
+            </p>
+            <div class="button-section">
+              <div class="button">
+                <a
+                  href="./shoe-store/index.html"
+                  target="_blank"
+                  type="button"
+                  class="cta"
+                  >Visit</a
+                >
+              </div>
+              <div class="button">
+                <a
+                  href="https://github.com/TylerIsCoding/TylerIsCoding.com/tree/main/shoe-store"
+                  target="_blank"
+                  type="button"
+                  class="cta github"
+                  ><img
+                    src="./Images/icon-github-small.png"
+                    class="button-image-git"
+                  />GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <h1 class="project-item-header">
+              Virtual <span class="pinkh1">B</span>artender
+            </h1>
+            <img
+              id="bartender-img"
+              class="project-img"
+              src="/images/bartender.png"
+              alt="Virtual Bartender"
+            />
+            <p>
+              A fully responsive web application that uses the cocktailDB API to
+              fetch drinks for the user. Provides ingredients, glassware, and
+              instructions.
+            </p>
+            <div class="button-section">
+              <div class="button">
+                <a
+                  href="./bartender/index.html"
+                  target="_blank"
+                  type="button"
+                  class="cta"
+                  >Visit</a
+                >
+              </div>
+              <div class="button">
+                <a
+                  href="https://github.com/TylerIsCoding/TylerIsCoding.com/tree/main/bartender"
+                  target="_blank"
+                  type="button"
+                  class="cta github"
+                  ><img
+                    src="./Images/icon-github-small.png"
+                    class="button-image-git"
+                  />GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <h1 class="project-item-header">
+              Ayesha<span class="pinkh1">'</span>s Salon
+            </h1>
+            <img
+              id="salon-img"
+              class="project-img"
+              src="/images/pic03.png"
+              alt="Ayesha's"
+            />
+            <p>
+              A website created for a local hair salon. It showcases the owners
+              skills with a lookbook and descriptions of services provided.
+            </p>
+            <div class="button-section">
+              <div class="button">
+                <a
+                  href="./salon/index.html"
+                  target="_blank"
+                  type="button"
+                  class="cta"
+                  >Visit</a
+                >
+              </div>
+              <div class="button">
+                <a
+                  href="https://github.com/TylerIsCoding/TylerIsCoding.com/tree/main/salon"
+                  target="_blank"
+                  type="button"
+                  class="cta github"
+                  ><img
+                    src="./Images/icon-github-small.png"
+                    class="button-image-git"
+                  />GitHub</a
+                >
+              </div>
+            </div>
+          </div>
         </section>
-        <!-- End of Header Section -->
+      </section>
+      <!-- End of Projects Section -->
 
-        <!-- MAIN -->
-        <main>
-            <!-- Beginning of Hero Section -->
-            <section id="hero">
-                <div class="hero container">
-                    <div class="hero-left">
-                        <div>
-                            <h1 class="Hello" data-text="Hello,">Hello,</h1>
-                            <h1 class="Im" data-text="I'm ">
-                                I'm
-                                <span class="titleName" data-text="Tyler"
-                                    >Tyler</span
-                                >
-                            </h1>
-                            <div class="button">
-                                <a href="#about" type="button" class="cta"
-                                    >I need a dev</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-right">
-                        <h2 class="titleText">
-                            I am a designer and a full-stack web developer.
-                        </h2>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Hero Section -->
+      <!-- Beginning of Statement Section -->
+      <section id="statement" class="section-style-2">
+        <div class="statement-header">
+          <h1 class="section-title"><span class="pinkh1">My</span> Mission</h1>
+        </div>
+        <div class="statement container">
+          <header>
+            <h2>Do you have a web presence?</h2>
+          </header>
+          <hr />
+          <p>
+            If you or someone you know needs to show a client what you can
+            provide, how will you show them? How will your website draw them in?
+            What happens if they look at your site on a phone? A tablet?
+          </p>
+          <p>
+            It is crucial that the websites that represent us and our business
+            are responsive and accessible. Responsive design allows your website
+            content to flow freely across all screen resolutions and sizes, and
+            renders it to look great on all devices. It also makes it
+            unnecessary to maintain different versions of your website for
+            mobile and desktop and saves you time, resources and efforts.
+          </p>
+          <p>
+            Accessibility means that all people can perceive, understand,
+            navigate, and interact with electronic information and be active,
+            contributing members of the digital world. Visual, auditory,
+            physical, speech, cognitive, and neurological disabilities should be
+            taken into account when implementing accessibility measures.
+          </p>
+        </div>
+      </section>
+      <!-- End of Statement Section -->
 
-            <!-- Start of About Me Section -->
-            <section id="about" class="section-style-2">
-                <h1 class="section-title">
-                    About <span class="pink">Me</span>
-                </h1>
-                <div class="about container">
-                    <div class="col-left">
-                        <header>
-                            <h2>I'm here to help</h2>
-                        </header>
-                        <hr />
-                        <p>
-                            I am a software engineer based in Boston,
-                            Massachusetts and I am passionate about helping
-                            clients and businesses increase their web presence
-                            by building responsive and beautiful websites.
-                        </p>
-                        <div class="content">
-                            <p>
-                                I went to The New England Institute of Art and
-                                received my degree in Digital Art and Animation.
-                                During my schooling I learned many software
-                                suites including the Adobe Creative Suite, 3Ds
-                                Max, Maya, and more. A chunk of my courses were
-                                in web design, web development, and programming
-                                to make rudimentary websites. This was the first
-                                spark of a life-long passion for web
-                                development.
-                            </p>
-                            <p>
-                                When I am not writing code you can typically
-                                find me making playlists, reading books, gaming,
-                                playing guitar, creating art, or endlessly
-                                scrolling Instagram. Most recently, I have
-                                gotten really into collecting sneakers. My
-                                wallet does not appreciate it.
-                            </p>
-                        </div>
-                        <div class="button more">
-                            <h3 class="cta more-text">More</h3>
-                        </div>
+      <!-- Beginning of Services Section -->
+      <section id="services" class="section-style-1">
+        <div class="services-header">
+          <h1 class="section-title">Ser<span class="pinkh1">v</span>ices</h1>
+        </div>
+        <div class="services container">
+          <div class="services-left">
+            <ul class="icons">
+              <li>
+                <img src="/images/icon-consulting.png" alt="Consulting" />
+              </li>
+              <li>
+                <img src="/images/icon-planning.png" alt="Planning" />
+              </li>
+              <li>
+                <img src="/images/icon-build.png" alt="Building" />
+              </li>
+              <li>
+                <img src="/images/icon-launch.png" alt="Launch" />
+              </li>
+            </ul>
+          </div>
+          <div class="services-right">
+            <header>
+              <h2>My Services</h2>
+            </header>
+            <hr />
+            <p>
+              I dedicate myself to meet and exceed my clients initial vision of
+              their passion project. Knowing what to expect when we work
+              together is critical - here is how I deliver success:
+            </p>
 
-                        <!-- <div class="button">
-                                        <a href="#contact" type="button" class="cta"
-                                            >Contact Me</a
-                                        >
-                                    </div>
-                                -->
-                    </div>
-                    <div class="col-right">
-                        <div class="about-img">
-                            <img
-                                src="/images/profile-img.jpg"
-                                alt="Image of Tyler"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of About Me Section -->
+            <h4>
+              <span
+                ><img
+                  class="small-icon"
+                  src="./images/icon-consulting.png"
+                  alt="Gear-icon" /></span
+              ><strong>Consultation</strong>
+            </h4>
+            <p>
+              We will discuss your project with a problem-solving attitude to
+              suggest, recommend, and design the best solution for your project
+              while I focus on writing the code that meets the project's
+              specifications and your needs.
+            </p>
+            <h4>
+              <span
+                ><img
+                  class="small-icon"
+                  src="./images/icon-planning.png"
+                  alt="Gear-icon" /></span
+              ><strong>Planning</strong>
+            </h4>
+            <p>
+              After we decide what you want your dream project to be, I will
+              begin the planning phase. I will draw up a proposal for you that
+              includes a visual preview, a plan of action, and a creation
+              timeline.
+            </p>
+            <h4>
+              <span
+                ><img
+                  class="small-icon"
+                  src="./images/icon-build.png"
+                  alt="Gear-icon" /></span
+              ><strong>Creation</strong>
+            </h4>
+            <p>
+              Once we come to an agreement with the proposal, I will begin to
+              create your project. I will give frequent updates of progress made
+              along the way. Communication is key at this stage and I will make
+              sure that you are aware of any hurdles and milestones as I create
+              and test your project.
+            </p>
+            <h4>
+              <span
+                ><img
+                  class="small-icon"
+                  src="./images/icon-launch.png"
+                  alt="Gear-icon" /></span
+              ><strong>Launch</strong>
+            </h4>
+            <p>
+              Once I have completed the project that represents your final
+              vision, we will go over your project one last time. If everything
+              is up to both of our standards we will launch your project and I
+              will provide ongoing support in accordance to our initial
+              agreement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End of Services Section -->
 
-            <!-- Beginning of Projects Section -->
-            <section id="projects" class="section-style-1">
-                <h1 class="section-title">
-                    Pro<span class="pink">j</span>ects
-                </h1>
-                <p>Here are a few of the projects I've made recently:</p>
-                <section class="projects container">
-                    <div class="project-item">
-                        <h1 class="project-item-header">
-                            Silverpoin<span class="pinkh1">t</span> Sneakers
-                        </h1>
-                        <img
-                            id="silverpoint-img"
-                            class="project-img"
-                            src="/images/pic01.png"
-                            alt="Silverpoint"
-                        />
-                        <p>
-                            A fully responsive website for a local sneaker,
-                            clothing, and watch retailer named Silverpoint
-                            Sneakers.
-                        </p>
-                        <div class="button">
-                            <a
-                                href="./shoe-store/index.html"
-                                target="_blank"
-                                type="button"
-                                class="cta"
-                                >Visit</a
-                            >
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <h1 class="project-item-header">
-                            Virtual <span class="pinkh1">B</span>artender
-                        </h1>
-                        <img
-                            id="bartender-img"
-                            class="project-img"
-                            src="/images/bartender.png"
-                            alt="Virtual Bartender"
-                        />
-                        <p>
-                            A fully responsive web application that uses the cocktailDB API to fetch drinks for the user. Provides ingredients, glassware, and instructions.
-                        </p>
-                        <div class="button">
-                            <a
-                                href="./bartender/index.html"
-                                target="_blank"
-                                type="button"
-                                class="cta"
-                                >Visit</a
-                            >
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <h1 class="project-item-header">
-                            Ayesha<span class="pinkh1">'</span>s Salon
-                        </h1>
-                        <img
-                            id="salon-img"
-                            class="project-img"
-                            src="/images/pic03.png"
-                            alt="Ayesha's"
-                        />
-                        <p>
-                            A website created for a local hair salon. It
-                            showcases the owners skills with a lookbook and
-                            descriptions of services provided.
-                        </p>
-                        <div class="button">
-                            <a
-                                href="./salon/index.html"
-                                target="_blank"
-                                type="button"
-                                class="cta"
-                                >Visit</a
-                            >
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <!-- End of Projects Section -->
+      <!-- Start of Contact Section -->
+      <section id="contact" class="section-style-2">
+        <div class="contact container">
+          <div class="contact-header">
+            <h1 class="section-title">Contact <span class="pink">Me</span></h1>
+          </div>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <div class="contact-item">
+              <h1 class="contact-text">My name is</h1>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name here"
+                required
+              />
+            </div>
+            <div class="contact-item">
+              <h1 class="contact-text">I would like to ask about</h1>
+              <input
+                type="text"
+                name="inquiry"
+                placeholder="designing my business a website!"
+                required
+              />
+            </div>
+            <div class="contact-item">
+              <h1 class="contact-text">My phone number is</h1>
+              <input
+                type="tel"
+                name="number"
+                placeholder="(XXX) XXX-XXXX"
+                required
+              />
+            </div>
+            <div class="contact-item">
+              <h1 class="contact-text">Oh, and my email is</h1>
+              <input
+                type="email"
+                name="email"
+                placeholder="your-email@website.com"
+                required
+              />
+            </div>
+            <div class="contact-item">
+              <button class="submitButton" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End of Contact Section -->
 
-            <!-- Beginning of Statement Section -->
-            <section id="statement" class="section-style-2">
-                <div class="statement-header">
-                    <h1 class="section-title">
-                        <span class="pinkh1">My</span> Mission
-                    </h1>
-                </div>
-                <div class="statement container">
-                    <header>
-                        <h2>Do you have a web presence?</h2>
-                    </header>
-                    <hr />
-                    <p>
-                        If you or someone you know needs to show a client what
-                        you can provide, how will you show them? How will your
-                        website draw them in? What happens if they look at your
-                        site on a phone? A tablet?
-                    </p>
-                    <p>
-                        It is crucial that the websites that represent us and
-                        our business are responsive and accessible. Responsive
-                        design allows your website content to flow freely across
-                        all screen resolutions and sizes, and renders it to look
-                        great on all devices. It also makes it unnecessary to
-                        maintain different versions of your website for mobile
-                        and desktop and saves you time, resources and efforts.
-                    </p>
-                    <p>
-                        Accessibility means that all people can perceive,
-                        understand, navigate, and interact with electronic
-                        information and be active, contributing members of the
-                        digital world. Visual, auditory, physical, speech,
-                        cognitive, and neurological disabilities should be taken
-                        into account when implementing accessibility measures.
-                    </p>
-                </div>
-            </section>
-            <!-- End of Statement Section -->
+      <!-- Footer -->
+      <section id="footer">
+        <div class="footer container">
+          <div class="brand">
+            <h1>
+              <span class="pink">T</span>yler <span class="pink">I</span>s
+              <span class="pink">C</span>oding
+            </h1>
+            <h2>Your Complete Web Solution</h2>
+            <div class="social-icon">
+              <div class="social-item">
+                <a href="https://twitter.com/tylertmckenna" target="_blank"
+                  ><img src="/Images/icon-twitter.png" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social-item">
+                <a href="https://www.instagram.com/yeoldeknob/" target="_blank"
+                  ><img src="/Images/icon-instagram.png" alt="Instagram"
+                /></a>
+              </div>
+              <div class="social-item">
+                <a href="https://github.com/TylerIsCoding" target="_blank"
+                  ><img src="/Images/icon-github.png" alt="GitHub"
+                /></a>
+              </div>
+              <div class="social-item">
+                <a
+                  href="https://www.linkedin.com/in/tyler-is-coding/"
+                  target="_blank"
+                  ><img src="/Images/icon-linkedin.png" alt="LinkedIn"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <p>Copyright © 2022 Tyler McKenna. All rights reserved.</p>
+        </div>
+      </section>
+      <!-- End of Footer -->
 
-            <!-- Beginning of Services Section -->
-            <section id="services" class="section-style-1">
-                <div class="services-header">
-                    <h1 class="section-title">
-                        Ser<span class="pinkh1">v</span>ices
-                    </h1>
-                </div>
-                <div class="services container">
-                    <div class="services-left">
-                        <ul class="icons">
-                            <li>
-                                <img
-                                    src="/images/icon-consulting.png"
-                                    alt="Consulting"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="/images/icon-planning.png"
-                                    alt="Planning"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="/images/icon-build.png"
-                                    alt="Building"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="/images/icon-launch.png"
-                                    alt="Launch"
-                                />
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="services-right">
-                        <header>
-                            <h2>My Services</h2>
-                        </header>
-                        <hr />
-                        <p>
-                            I dedicate myself to meet and exceed my clients
-                            initial vision of their passion project. Knowing
-                            what to expect when we work together is critical -
-                            here is how I deliver success:
-                        </p>
+      <!-- END OF MAIN -->
+    </main>
+  </body>
 
-                        <h4>
-                            <span
-                                ><img
-                                    class="small-icon"
-                                    src="./images/icon-consulting.png"
-                                    alt="Gear-icon" /></span
-                            ><strong>Consultation</strong>
-                        </h4>
-                        <p>
-                            We will discuss your project with a problem-solving
-                            attitude to suggest, recommend, and design the best
-                            solution for your project while I focus on writing
-                            the code that meets the project's specifications and
-                            your needs.
-                        </p>
-                        <h4>
-                            <span
-                                ><img
-                                    class="small-icon"
-                                    src="./images/icon-planning.png"
-                                    alt="Gear-icon" /></span
-                            ><strong>Planning</strong>
-                        </h4>
-                        <p>
-                            After we decide what you want your dream project to
-                            be, I will begin the planning phase. I will draw up
-                            a proposal for you that includes a visual preview, a
-                            plan of action, and a creation timeline.
-                        </p>
-                        <h4>
-                            <span
-                                ><img
-                                    class="small-icon"
-                                    src="./images/icon-build.png"
-                                    alt="Gear-icon" /></span
-                            ><strong>Creation</strong>
-                        </h4>
-                        <p>
-                            Once we come to an agreement with the proposal, I
-                            will begin to create your project. I will give
-                            frequent updates of progress made along the way.
-                            Communication is key at this stage and I will make
-                            sure that you are aware of any hurdles and
-                            milestones as I create and test your project.
-                        </p>
-                        <h4>
-                            <span
-                                ><img
-                                    class="small-icon"
-                                    src="./images/icon-launch.png"
-                                    alt="Gear-icon" /></span
-                            ><strong>Launch</strong>
-                        </h4>
-                        <p>
-                            Once I have completed the project that represents
-                            your final vision, we will go over your project one
-                            last time. If everything is up to both of our
-                            standards we will launch your project and I will
-                            provide ongoing support in accordance to our initial
-                            agreement.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Services Section -->
-
-            <!-- Start of Contact Section -->
-            <section id="contact" class="section-style-2">
-                <div class="contact container">
-                    <div class="contact-header">
-                        <h1 class="section-title">
-                            Contact <span class="pink">Me</span>
-                        </h1>
-                    </div>
-                    <form
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                        onSubmit="submit"
-                    >
-                        <div class="contact-item">
-                            <h1 class="contact-text">My name is</h1>
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your name here"
-                                required
-                            />
-                        </div>
-                        <div class="contact-item">
-                            <h1 class="contact-text">
-                                I would like to ask about
-                            </h1>
-                            <input
-                                type="text"
-                                name="inquiry"
-                                placeholder="designing my business a website!"
-                                required
-                            />
-                        </div>
-                        <div class="contact-item">
-                            <h1 class="contact-text">My phone number is</h1>
-                            <input
-                                type="tel"
-                                name="number"
-                                placeholder="(XXX) XXX-XXXX"
-                                required
-                            />
-                        </div>
-                        <div class="contact-item">
-                            <h1 class="contact-text">Oh, and my email is</h1>
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="your-email@website.com"
-                                required
-                            />
-                        </div>
-                        <div class="contact-item">
-                            <button class="submitButton" type="submit">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <!-- End of Contact Section -->
-
-            <!-- Footer -->
-            <section id="footer">
-                <div class="footer container">
-                    <div class="brand">
-                        <h1>
-                            <span class="pink">T</span>yler
-                            <span class="pink">I</span>s
-                            <span class="pink">C</span>oding
-                        </h1>
-                        <h2>Your Complete Web Solution</h2>
-                        <div class="social-icon">
-                            <div class="social-item">
-                                <a
-                                    href="https://twitter.com/tylertmckenna"
-                                    target="_blank"
-                                    ><img
-                                        src="/Images/icon-twitter.png"
-                                        alt="Twitter"
-                                /></a>
-                            </div>
-                            <div class="social-item">
-                                <a
-                                    href="https://www.instagram.com/yeoldeknob/"
-                                    target="_blank"
-                                    ><img
-                                        src="/Images/icon-instagram.png"
-                                        alt="Instagram"
-                                /></a>
-                            </div>
-                            <div class="social-item">
-                                <a
-                                    href="https://github.com/TylerIsCoding"
-                                    target="_blank"
-                                    ><img
-                                        src="/Images/icon-github.png"
-                                        alt="GitHub"
-                                /></a>
-                            </div>
-                            <div class="social-item">
-                                <a
-                                    href="https://www.linkedin.com/in/tyler-is-coding/"
-                                    target="_blank"
-                                    ><img
-                                        src="/Images/icon-linkedin.png"
-                                        alt="LinkedIn"
-                                /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Copyright © 2022 Tyler McKenna. All rights reserved.</p>
-                </div>
-            </section>
-            <!-- End of Footer -->
-
-            <!-- END OF MAIN -->
-        </main>
-    </body>
-
-    <!-- Scripts -->
-    <script src="./scripts/main.js"></script>
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
 </html>
