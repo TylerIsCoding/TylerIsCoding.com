@@ -2453,6 +2453,11 @@ table td {
   padding: 0.75em 0.75em;
 }
 
+.cost {
+  text-align: right;
+  padding-right: 2rem;
+}
+
 table th {
   color: #fff;
   font-size: 0.9em;
