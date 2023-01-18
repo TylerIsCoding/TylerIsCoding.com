@@ -13,7 +13,7 @@ function redirectSneakers() {
 }
 
 function redirectBartender() {
-  window.open('../bartender/index.html', '_blank');
+  window.open('../restaurant/index.html', '_blank');
 }
 
 function redirectSalon() {
