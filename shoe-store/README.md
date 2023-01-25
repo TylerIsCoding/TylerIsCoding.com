@@ -31,7 +31,7 @@ Silverpoint Sneakers is a pretty light webpage, so I really did not find it nece
 </p>
 <br>
 <h2>Lessons Learned</h2>
-<p>Building my personal portfolio website was a great learning experience and I took away several valuable lessons.
+<p>Building Silverpoint Sneakers was a great learning experience and I took away several valuable lessons:
 
 - The importance of planning and organization in the development process
 - The power of CSS Grid and Flexbox in creating responsive and flexible layouts
