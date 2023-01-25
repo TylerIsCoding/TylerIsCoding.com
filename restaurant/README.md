@@ -39,7 +39,8 @@ Paterro's Kitchen is a pretty light webpage, so I really did not find it necessa
 - The importance of testing and debugging in the development process
 - The significance of keeping up with the latest web development technologies and trends
 - The benefit of using version control with Git and hosting the code on Github</p>
-
+<br>
+<h2>Credit</h2>
 
 Landed by HTML5 UP
 html5up.net | @ajlkn
