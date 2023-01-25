@@ -1,17 +1,18 @@
 <h1 align="center">Paterro's Kitchen</h1>
 <img src="https://i.imgur.com/pE1BENk.jpg">
 <br>
-<p>This is my personal software engineering and freelancing portfolio. This was a test of my design skills and was created to be responsive and beautiful.</p>
-<p>Link to website: <a href="https://www.tyleriscoding.com">TylerIsCoding.com</a></p>
+<p>Paterro's Kitchen is a visually appealing website designed to showcase the restaurant's authentic Italian food and charming atmosphere. The site features a clean, modern layout, high-quality images and a reservation page.</p>
+<p>Link to website: <a href="https://www.tyleriscoding.com/restaurant/index.html">Paterro's Kitchen</a></p>
 <h2>How It's Made</h2>
-<p><strong>Tech Used:</strong> HTML5, CSS3, JavaScript</p>
+<p><strong>Tech Used:</strong> HTML5, CSS3, JavaScript, JQuery, Responsive Tools</p>
 <br>
 <p>
-I built my personal portfolio website, www.tyleriscoding.com, using HTML5, CSS3, and JavaScript.
+I built this website using HTML5, CSS3, JavaScript, and JQuery.
 
 - HTML5 provided the structure and content for the website
 - CSS3 was used to style and layout the website
 - JavaScript was used to create interactive features such as the navigation bar and form validation.
+- JQuery added some functionality when it came to styling and responsiveness.
 
 I also used a responsive design approach to ensure the website looks great on all devices.</p>
 <br>
@@ -26,7 +27,7 @@ I could have:
 - Leveraged browser caching to improve page load time for repeat visitors
 - Used Google PageSpeed Insights, GTMetrix, etc. to measure and analyze website performance and identify opportunities for optimization.
 
-My website is a pretty light webpage, so I really did not find it necessary to do any of these things. The page loads fine on any computer or device that I have tested it on.
+Paterro's Kitchen is a pretty light webpage, so I really did not find it necessary to do any of these things. The page loads fine on any computer or device that I have tested it on.
 </p>
 <br>
 <h2>Lessons Learned</h2>
