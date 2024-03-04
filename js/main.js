@@ -2,14 +2,12 @@ const sneakerImage = document.querySelector("#silverpoint-img");
 const bartenderImage = document.querySelector("#bartender-img");
 const salonImage = document.querySelector("#salon-img");
 const jessiImage = document.querySelector("#jessinaff-img");
-const questlogImage = document.querySelector("#questlog-img");
 const moreButton = document.querySelector(".more");
 
 sneakerImage.addEventListener("click", redirectSneakers);
 bartenderImage.addEventListener("click", redirectBartender);
 salonImage.addEventListener("click", redirectSalon);
 jessiImage.addEventListener("click", redirectJessi);
-questlogImage.addEventListener("click", redirectQuest);
 moreButton.addEventListener("click", expandInfo);
 
 function redirectSneakers() {
@@ -26,10 +24,6 @@ function redirectSalon() {
 
 function redirectJessi() {
     window.open("https://www.jessinaff.com", "_blank");
-}
-
-function redirectQuest() {
-    window.open("https://quest-log.cyclic.app/dashboard", "_blank");
 }
 
 function expandInfo() {
